@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "Bad Dog, No Chrome",
+    "version": "1.0",
+    "description": "Closes new windows when 3+ are already open in this profile.",
+    "permissions": [
+        "storage"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_title": "Bad Dog, No Chrome"
+    }
+}
