@@ -1,10 +1,11 @@
 {
     "manifest_version": 3,
     "name": "Bad Dog, No Chrome",
-    "version": "1.0",
-    "description": "Closes new windows when 3+ are already open in this profile.",
+    "version": "1.1",
+    "description": "Closes new windows when 3+ are already open, and keeps each window to 10 tabs max.",
     "permissions": [
-        "storage"
+        "storage",
+        "tabs"
     ],
     "background": {
         "service_worker": "background.js"
