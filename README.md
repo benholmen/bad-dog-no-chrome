@@ -11,3 +11,7 @@ git clone git@github.com:benholmen/bad-dog-no-chrome.git [/sensible/local/path/b
 3. Enable Developer Mode
 4. Click Load Unpacked
 5. Choose the folder you selected
+
+## Credits
+
+Logo based on ["No take, only throw"](https://knowyourmeme.com/sensitive/memes/no-take-only-throw) by Tumblr user cupcakelogic.

@@ -4,33 +4,62 @@
         <meta charset="utf-8" />
         <style>
             body {
-                min-width: 150px;
-                padding: 10px;
+                width: 200px;
+                padding: 16px 16px 12px;
                 font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
                     Roboto, sans-serif;
                 margin: 0;
                 text-align: center;
+                background: #fafafa;
+                color: #888;
             }
 
-            .count {
-                font-size: 3em;
-                font-weight: bold;
-                color: #c0392b;
+            .icon {
+                width: 96px;
+                height: 96px;
+                margin: 0 auto 12px;
             }
 
-            .label {
-                font-size: 12px;
-                color: #666;
-                margin-top: 5px;
-                margin-bottom: 12px;
+            .icon img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+
+            .stats {
+                display: flex;
+                justify-content: center;
+                gap: 24px;
+            }
+
+            .stat-count {
+                font-size: 20px;
+                font-weight: 600;
+                color: #999;
+                line-height: 1;
+            }
+
+            .stat-label {
+                font-size: 10px;
+                color: #aaa;
+                margin-top: 3px;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
             }
         </style>
     </head>
     <body>
-        <div class="count" id="windowCount">0</div>
-        <div class="label">windows denied</div>
-        <div class="count" id="tabCount">0</div>
-        <div class="label">tabs closed</div>
+        <div class="icon"><img src="icons/icon128.png" alt="Bad Dog" /></div>
+        <div class="stats">
+            <div>
+                <div class="stat-count" id="windowCount">0</div>
+                <div class="stat-label">windows</div>
+            </div>
+            <div>
+                <div class="stat-count" id="tabCount">0</div>
+                <div class="stat-label">tabs</div>
+            </div>
+        </div>
         <script src="popup.js"></script>
     </body>
 </html>
